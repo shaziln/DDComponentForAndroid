@@ -1,12 +1,12 @@
 apply plugin: 'com.dd.comgradle'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.luojilab.androidcomponent"
-        minSdkVersion 15
-        targetSdkVersion 14
+        minSdkVersion 17
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -41,7 +41,7 @@ android {
 }
 
 dependencies {
-    compile project(':componentservice')
+    implementation project(':componentservice')
     annotationProcessor project(':router-anno-compiler')
 }
 
