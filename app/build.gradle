@@ -43,6 +43,8 @@ android {
 dependencies {
     implementation project(':componentservice')
     annotationProcessor project(':router-anno-compiler')
+    implementation project(':basicres')
+    implementation project(':basiclib')
 }
 
 combuild {

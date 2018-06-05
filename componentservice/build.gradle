@@ -23,12 +23,11 @@ android {
 }
 
 dependencies {
-//    compile project(':componentlib')
-    implementation project(':basicres')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':basicres')
+
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1')
     testImplementation 'junit:junit:4.12'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 repositories {
     mavenCentral()

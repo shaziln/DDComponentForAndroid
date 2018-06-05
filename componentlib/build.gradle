@@ -39,9 +39,10 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api 'com.android.support:appcompat-v7:26.1.0'
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1')
-    testImplementation 'junit:junit:4.12'
     api project(':router-annotation')
     api 'com.google.code.gson:gson:2.8.2'
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1')
+    testImplementation 'junit:junit:4.12'
 
 }

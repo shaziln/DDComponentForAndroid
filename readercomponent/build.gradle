@@ -38,12 +38,14 @@ android {
 }
 
 dependencies {
-    implementation project(':componentservice')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':componentservice')
+    implementation project(':basicres')
+    implementation project(':basiclib')
     annotationProcessor 'com.luojilab.ddcomponent:router-anno-compiler:1.0.0'
+
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1')
     testImplementation 'junit:junit:4.12'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 
 combuild {
